@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import cve from "./cve"
+
+export const schemaTypes = [cve]

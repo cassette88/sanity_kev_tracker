@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'deeppink-gull',
+  title: 'sanity cve data',
 
   projectId: '099pljcb',
   dataset: 'production',
