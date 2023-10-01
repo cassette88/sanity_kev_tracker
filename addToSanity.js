@@ -2,9 +2,9 @@ const {createClient} = require('@sanity/client')
 
 
 const client = createClient({
-    projectId: '099pljcb',
+    projectId: 'YOUR_SANITY_PROJECT_ID',
     dataset: 'production',
-    token: `skZrKrqBCaZJIH4seIpBK8nrdtUzqszONLytZjve6kWmyfhCUXZp7OmfJOlx9rLgSAo9Ftqd71NwFNVsxdSmdUIedEjm7FTineJILREcMkXLLN07Cy3qNIQzBMMG2Tg8Bd516WO0to7t9Tf3iJDtEzWxPjPoWu2w3CZ8aFEgKdAMSzpSdmm5`, 
+    token:  process.env.SANITY_TOKEN, 
    useCdn: false // We can't use the CDN for writing
   })
 
@@ -14,7 +14,7 @@ let transaction = client.transaction()
     doc.forEach(doc => {
     transaction.createIfNotExists(doc)
      })
-      // console.log(`CVE data was added to Sanity successfully`)
+    
       transaction.commit()
       .then((res) => {
           console.log(`A succesfull update!`)
