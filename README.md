@@ -2,7 +2,7 @@
 # README
 
 ## Overview
-This codebase is designed to fetch data from the Known Exploited Vulnerability (KEV) database and add new Common Vulnerabilities and Exposures (CVEs) into a Sanity CMS datalake. It is particularly useful for security teams and researchers who need to keep track of CVEs and comply with Binding Operation Directive 22-01.
+This codebase is designed to fetch data from the Known Exploited Vulnerability (KEV) database and add new Common Vulnerabilities and Exposures (CVEs) into a Sanity CMS Content Lake. It is particularly useful for security teams and researchers who need to keep track of CVEs and comply with Binding Operation Directive 22-01.
 ### Getting Started
 #### Prerequisites
 Ensure you have the following installed on your local machine:
