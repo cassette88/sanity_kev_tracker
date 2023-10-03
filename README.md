@@ -25,7 +25,7 @@ The main server logic is in server.js. It fetches data from the KEV database, tr
 
 The Sanity CMS schema is defined in schemas/cve.ts. This schema is used to structure the CVE data in the Sanity CMS datalake.
 
-The addToSanity.js file contains the logic for adding data to the Sanity CMS datalake.
+The addToSanity.js file contains the logic for adding data to the Sanity CMS Content Lake.
 - Contributing
 
 Contributions are welcome. Please open an issue or submit a pull request.
