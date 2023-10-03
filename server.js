@@ -19,7 +19,7 @@ async function getCVE(){
         const response = await axios.get(URL)
         let limit = response.data.vulnerabilities
       
-        // Preparing the fetched data for addition to the Sanity CMS datalake
+        // Preparing the fetched data for addition to the Sanity CMS Content Lake
         prepareData(limit)
         console.log("called API")
 
@@ -34,7 +34,7 @@ async function getCVE(){
 let cves = []
 let local = []
 
-// Function to prepare the fetched data for addition to the Sanity CMS datalake
+// Function to prepare the fetched data for addition to the Sanity CMS Content Lake
 function prepareData(limit){
     console.log("preparing data")
     for(let i = 0; i < limit.length; i ++){
@@ -43,7 +43,7 @@ function prepareData(limit){
 
     }
 
-    // Adding the transformed data to the Sanity CMS datalake
+    // Adding the transformed data to the Sanity CMS Content Lake
     addToSanity(cves)
 }
 
